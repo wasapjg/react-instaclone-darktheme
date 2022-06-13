@@ -9,17 +9,17 @@
     margin-bottom: 30px;
     position: relative;
 
-    & .mssg_new{
+    & .mssg_new {
       margin-bottom: 10px;
       text-align: left;
       text-align: center;
 
-      & > a{
+      &>a {
         display: inline-block;
         padding: 5px 14px 5px 14px;
         font-size: 14px;
 
-        & i{
+        & i {
           margin-right: 6px;
         }
 
@@ -55,7 +55,7 @@
 
     }
 
-    & .con_count{
+    & .con_count {
       font-size: 17px;
       margin-top: 13px;
       position: relative;
@@ -77,20 +77,20 @@
         background: $fb;
       }
 
-      & > img{
+      &>img {
         height: 40px;
         width: 40px;
         border-radius: 50%;
       }
 
-      & .m_sr_content{
+      & .m_sr_content {
         display: inline-block;
         position: relative;
         top: -6px;
         margin-left: 5px;
         width: 65%;
 
-        & .m_sr_username{
+        & .m_sr_username {
           display: block;
           font-weight: 600;
           font-size: 14px;
@@ -98,7 +98,7 @@
           overflow: hidden;
         }
 
-        & .m_sr_light{
+        & .m_sr_light {
           color: $d_light;
           display: inline-block;
           word-break: break-all;
@@ -106,12 +106,12 @@
           & .camera {
             margin-left: 3px;
 
-            & .retro{
+            & .retro {
               margin-right: 4px;
             }
           }
 
-          & .mssg_sent{
+          & .mssg_sent {
             position: relative;
             display: inline-block;
             color: $d_light;
@@ -127,14 +127,14 @@
 
       }
 
-      & .m_sr_time{
+      & .m_sr_time {
         position: absolute;
         top: 4px;
         right: 7px;
         color: $dark;
       }
 
-      & .m_sr_unread{
+      & .m_sr_unread {
         position: absolute;
         background: #54BBFF;
         color: $ff;
@@ -147,7 +147,7 @@
 
     }
 
-     & .mssg_sr_toggle{
+    & .mssg_sr_toggle {
       background: $fb;
       animation: pro_active 0.1s ease-in-out;
     }
@@ -175,12 +175,12 @@
       top: 62px;
       border-bottom: none;
 
-      & .m_m_top{
-        background: #f6f7f9;
+      & .m_m_top {
+        background: $third-border;
         height: 35px;
         padding: 10px;
         position: relative;
-        border-bottom: 1px solid #edf0f5;
+        border-bottom: 1px solid $fb;
 
         & img.con_with_avatar {
           height: 35px;
@@ -188,14 +188,14 @@
           border-radius: 50%;
         }
 
-        & .m_m_t_c{
+        & .m_m_t_c {
           display: inline-block;
           position: relative;
           top: -3px;
           margin-left: 5px;
           width: 82%;
 
-          & .con_name{
+          & .con_name {
             position: relative;
             font-size: 14px;
             font-weight: 600;
@@ -226,35 +226,35 @@
           padding: 1px;
           cursor: pointer;
           color: $d_light;
-          border: 1px solid #f6f7f9;
+          border: 1px solid $third-border;
 
-          &:hover{
-            background: #e6f9f9;
+          &:hover {
+            background: $fb;
             border: 1px solid $ee;
             color: $dark;
           }
         }
 
-        & .mssg_options{
+        & .mssg_options {
           left: 299px;
           top: 55px;
 
           & ul li a,
-          & ul li label{
+          & ul li label {
             width: 132px !important;
             cursor: pointer;
           }
 
-          &::before{
+          &::before {
             content: "";
             background: $ff;
             width: 11px;
             height: 11px;
             top: -6px;
             position: absolute;
-            border-top: 1px solid #DCDFE1;
+            border-top: 1px solid $def_hr;
             transform: rotate(45deg);
-            border-left: 1px solid #DCDFE1;
+            border-left: 1px solid $def_hr;
             right: 9px;
             z-index: -1;
           }
@@ -285,7 +285,7 @@
               cursor: pointer;
               outline: none;
 
-              & .m_m_img{
+              & .m_m_img {
                 width: 200px;
               }
 
@@ -295,7 +295,7 @@
 
             }
 
-            & .mssg_sr_toggle{
+            & .mssg_sr_toggle {
               background: $fb;
               animation: pro_active 0.1s ease-in-out;
             }
@@ -312,22 +312,22 @@
             & .m_m_tools {
               margin-top: 3px;
 
-              & > div > span {
+              &>div>span {
                 display: inline-block;
                 height: 17px;
                 color: #aab8c2;
                 margin-right: 4px;
                 cursor: pointer;
 
-                &:first-of-type{
+                &:first-of-type {
                   margin-left: 10px;
                 }
 
-                &:hover{
+                &:hover {
                   color: $d_light;
                 }
 
-                & i{
+                & i {
                   font-size: 17px;
                 }
 
@@ -369,7 +369,7 @@
             text-align: left;
 
             & .m_m {
-              background: #EFF3F6;
+              background: $second_border;
               margin-left: 8px;
               text-align: left;
 
@@ -378,8 +378,8 @@
                 width: 13px;
                 height: 13px;
                 position: absolute;
-                background: #EFF3F6;
-                border: 1px solid #EFF3F6;
+                background: $second_border;
+                border: 1px solid $second_border;
                 left: -8px;
                 top: 11px;
                 transform: rotate(45deg);
@@ -400,8 +400,8 @@
 
       & .m_m_bottom {
         padding: 10px 8px 8px 10px;
-        background: #f6f7f9;
-        border: 1px solid #eee;
+        background: $second_border;
+        border: 1px solid $ee;
 
         & textarea {
           width: 96%;
@@ -443,39 +443,39 @@
     .about_con {
       padding: 10px;
 
-      & > div{
+      &>div {
         margin-top: 20px;
       }
 
-      & .sli_label{
+      & .sli_label {
         display: block;
         color: $d_light;
       }
 
-      & .sli_bold{
+      & .sli_bold {
         font-weight: 600;
       }
 
       & .sli_with_div {
         margin-top: 0px;
 
-        & .sli_with{
+        & .sli_with {
           margin-top: 5px;
 
-          & img{
+          & img {
             width: 40px;
             display: inline-block;
             border-radius: 50%;
           }
 
-          & .sli_with_cont{
+          & .sli_with_cont {
             display: inline-block;
             position: relative;
             top: -5px;
             width: 87%;
             margin-left: 6px;
 
-            & > a{
+            &>a {
               font-weight: 600;
               color: $dark;
 
@@ -484,7 +484,7 @@
               }
             }
 
-            & span.sli_w{
+            & span.sli_w {
               display: block;
               font-size: 13px;
               position: relative;
@@ -496,14 +496,14 @@
         }
       }
 
-      & .sli_media{
+      & .sli_media {
         margin-bottom: 20px;
 
-        & span{
+        & span {
           margin-bottom: 4px;
         }
 
-        & .sli_media_img{
+        & .sli_media_img {
           width: 120px;
           height: 120px;
           border-radius: 3px;
@@ -511,7 +511,7 @@
           margin-bottom: 5px;
           cursor: pointer;
 
-          &:hover{
+          &:hover {
             transform: scale(1.03);
           }
         }

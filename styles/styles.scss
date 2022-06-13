@@ -30,7 +30,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(120deg, rgb(161, 240, 255), rgb(255, 253, 208));
+  background-image: linear-gradient(120deg, $backimg1, $backimg2);
   z-index: 3;
   text-align: center;
 

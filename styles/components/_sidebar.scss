@@ -1,12 +1,12 @@
 // SIDEBAR
-.m_n_wrapper{
+.m_n_wrapper {
   position: fixed;
   top: 60px;
   background: $fb;
   left: 34px;
   height: 88%;
 
-  & > .m_n {
+  &>.m_n {
     & img {
       width: 25px;
       height: 25px;
@@ -15,7 +15,7 @@
       top: 8px;
     }
 
-    & > ul > li > a{
+    &>ul>li>a {
       display: block;
       width: 170px;
       font-size: 14px;
@@ -26,31 +26,31 @@
       position: relative;
       outline: none;
 
-      &:hover{
+      &:hover {
         background: #ebf4fd;
         color: #1b2733;
       }
 
-      &:focus{
+      &:focus {
         background: #ebf4fd;
         color: #1b2733;
       }
 
-      & > span.m_n_text{
+      &>span.m_n_text {
         position: relative;
       }
 
-      & > span.m_n_icon{
+      &>span.m_n_icon {
         position: absolute;
         top: 8px;
 
-        & > span.m_n_icon > i{
+        &>span.m_n_icon>i {
           font-size: 23px;
         }
 
       }
 
-      & > span.m_n_new{
+      &>span.m_n_new {
         font-size: 13px;
         position: absolute;
         right: 12px;
@@ -62,11 +62,11 @@
 
     }
 
-    & .sidebar_active{
+    & .sidebar_active {
       background: #ebf4fd;
       color: $dark;
 
-      &::before{
+      &::before {
         content: "";
         width: 3px;
         height: 33px;
@@ -83,22 +83,22 @@
 
   }
 
-  & > .m_n_bottom{
+  &>.m_n_bottom {
     position: fixed;
     bottom: 20px;
     width: 226px;
     text-align: center;
     display: inline-block;
 
-    & ul{
+    & ul {
       position: relative;
       display: inline-block;
 
-      & li{
+      & li {
         float: left;
         margin-right: 30px;
 
-        &:last-of-type::after{
+        &:last-of-type::after {
           content: "";
           display: block;
           clear: both;
@@ -108,20 +108,20 @@
 
     }
 
-    & a{
+    & a {
       font-size: 14px;
       color: #66757f;
       outline: none;
 
-      & a:hover{
+      & a:hover {
         color: #1b2733;
       }
 
-      & a:focus{
+      & a:focus {
         color: #1b2733;
       }
 
-      &:last-of-type{
+      &:last-of-type {
         display: inline-block;
       }
 
@@ -129,15 +129,15 @@
 
   }
 
-  & .nav_options{
+  & .nav_options {
     position: fixed;
     left: 113px;
     bottom: 65px;
 
-    &::after{
+    &::after {
       content: "";
       position: absolute;
-      background: white;
+      background: $ff;
       width: 11px;
       height: 10px;
       bottom: -6px;
