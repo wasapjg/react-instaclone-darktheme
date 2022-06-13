@@ -14,8 +14,6 @@ import NotiSpeak from './others/noti-speak'
 import SideBar from './others/sidebar/sidebar'
 import AppRoutes from './App-routes'
 
-import '../styles/styles.css'
-
 class App extends Component {
   componentDidMount = () => {
     let { dispatch } = this.props
